@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:padding="24dp"
+        android:layout_height="200dp"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" android:padding="24dp"
+            android:orientation="vertical"
+            android:background="@color/color_on_bazel_green"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sampleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample test here"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/bazel_green"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/helloBazelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/thinking_face"
+        android:textColor="@color/bazel_green"
+        android:textSize="32dp" />
+
+
+    <Button
+        android:id="@+id/clickMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/bazel_green"
+        android:text="@string/click_me_button"
+        android:textColor="@color/color_on_bazel_green" />
+</LinearLayout>
